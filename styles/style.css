@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Festive&family=Hubballi&family=Lobster&family=Open+Sans:wght@300&family=PT+Sans:ital,wght@1,700&family=Playfair+Display:ital,wght@1,600;1,900&family=Smooch+Sans:wght@300&family=Yuji+Boku&display=swap');
+
+body{
+    margin: 0;
+    font-family: Open Sans;
+    color:white;
+    background-color: black;
+    background-image: url("../images/MacBook\ Pro\ 16_\ -\ 1.png");
+    background-size: cover;
+}
+
+h1, p{
+    margin: 0;
+} 
+
+a{
+    color: white;
+    text-decoration: none;
+    margin-right: 60px;
+    font-size: 18px;
+}
+
+h1{
+    font-size: 48px;
+    margin-bottom: 60px;
+}
+
+/* header */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(173, 0, 0) ;
+}
+.books{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10.5%;
+    padding-bottom: 60px;
+    padding-right: 60px;
+}
+
+.books h1{
+    padding-top: 40px;
+    font-size: 35px;
+}
+
+.logoImg{
+    width: 240px;
+    height: 122px;
+    margin-right: 20px;
+}
+
+nav{
+    height: 122px;
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    justify-content: right;
+    list-style: none; /*убираем маркеры списка*/
+    padding-left: 0; /*убираем левый отступ, равный 40px*/
+}
+
+a:active{
+    color:red;
+}
+
+/* постеры */
+
+.posters{
+    margin-bottom: 60px;
+}
+
+.postersInner{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.movie{
+    width: 340px;
+}
+
+.library{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    background: rgb(253, 253, 253, 0.1);
+    height: 80px;
+    padding-left: 15px;
+    padding-right: 5px;
+}
+ 
+.poster{
+    width: 300px;
+    height: 420px;
+    transition: transform 1.6s;
+    padding: 20px;
+}
+
+.poster:hover{
+    transform: scale(1.1);
+}
+
+.pMovie::before{
+    content:url("../images/cinema.png");
+    margin-right: 10px;
+}
+
+/* подвал */
+
+.footerCont{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 40px;
+    margin-left: 80px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #797676;;
+}
+
+footer{
+    background-color:#1F1F1F;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 70px;
+}
+
+.miniLogo{
+    width: 73px;
+    height: 43px;
+    float: left;
+    margin-right: 20px;
+}
+
+.textFooter {
+    display: flex;
+    flex-direction: column;
+    padding-left: 80px;
+}
+
+.footerP{
+    color: #797676;
+    font-weight: 500;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.footerImg{
+    display: block;
+    width: 40px;
+    height: 35px;
+    padding-left: 30px;
+}
+
+.footer{
+    display: flex;
+    justify-content: start;
+}
+
+.phone{
+    color: rgb(255, 0, 0);
+    font-size: 28px;
+    border:rgb(128, 26, 26) 1px dashed;
+    padding: 6px;
+}
+
+main{
+    display: flex ;
+}
+
+.header:active{
+    color: red;
+}
+
+.info{
+    display:flex ;
+    margin: 40px;
+}
+
+.infoPoster{
+    margin-left: 70px;
+    height: 800;
+    width:calc(36%-75px);
+}
+
+.infoText{
+    margin-right: 50px;
+    margin-left: 50px;
+    width : calc(65% - 50px - 50px);
+}
+
+.movie{
+    border: 1px dotted rgb(255, 255, 255);
+}
+
+.title{
+    margin: 0px;
+}
+
+.menu{
+    border:1px dotted white;
+    padding: 7px;
+}
+
+.menu:hover{
+    color:red;
+    background-color: white;
+    border:1px dotted red;
+}
+
+.tickets{
+    font-family: Open Sans;
+    background-color: red;
+    font-weight: 550;
+    font-size: 19px;
+    color:white;
+    width: 190px;
+    height: 40px;
+    display: block;
+    margin: 15px auto;
+  
+}
+
+/* мои доработки */
+
+.books h1{
+    border: 1px solid white;
+    margin-top: 3%;
+    padding: 10px;
+}
+
+input { 
+    width: 100%;
+    height: 34px;
+    padding-left: 15px;
+    border: 2px solid #462a43;
+  }
+ 
+  .poisk{
+    background-color: #fff;
+  }
+
+  .lupa{
+    padding-left: 20px;
+    width: 20px;
+    height: 20px;
+    padding-top: 6.5vh;
+}
+
+form {
+    position: relative;
+    width: 400px;
+    margin: 0 auto;
+    padding-top: 2.5%;
+  }
+
+  button {
+    border: none;
+    height: 42px;
+    width: 42px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+  }
+
+  input, button {
+    outline: none;
+    background: transparent;
+  }
+  
+  input:focus {
+    border-color: #311c24;
+  }
+
+  .name{
+      font-size: 17px;
+      font-style: italic;
+  }
